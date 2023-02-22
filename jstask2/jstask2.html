@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        #first {
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="first" onkeyup="insideText()">
+    <div id="second"></div>
+</body>
+<script>
+    function insideText() {
+        var text = document.getElementById("first").value;
+        document.getElementById("second").innerHTML = text;
+    }
+</script>
+
+</html>
