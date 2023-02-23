@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="box" placeholder="Enter Text">
+    <button onclick="placeText()">Submit</button>
+    <div id="content"></div>
+</body>
+<script>
+    function placeText() {
+        var contentText = document.getElementById("box").value;
+        document.getElementById("content").innerHTML = contentText;
+        alert(contentText);
+    }
+</script>
+
+</html>
