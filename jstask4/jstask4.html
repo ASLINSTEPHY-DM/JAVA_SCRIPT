@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -32,4 +33,40 @@
     }
 </script>
 
+=======
+<!DOCTYPE html>
+<html>
+
+<body>
+    <ol>
+        <li onclick="friendList(this)">vibi</li>
+        <li onclick="friendList(this)">Aslin</li>
+        <li onclick="friendList(this)">Ashi</li>
+        <li onclick="friendList(this)">Babisha</li>
+        <li onclick="friendList(this)">sneha</li>
+        <li onclick="friendList(this)">Aswathy</li>
+        <li onclick="friendList(this)">Sathya</li>
+        <li onclick="friendList(this)">Malar</li>
+        <li onclick="friendList(this)">Abi</li>
+        <li onclick="friendList(this)">Biki</li>
+    </ol>
+</body>
+<script>
+    function friendList(list) {
+        let vowelLetter = list.innerHTML[0];
+        if (
+            vowelLetter === "A" ||
+            vowelLetter === "E" ||
+            vowelLetter === "I" ||
+            vowelLetter === "O" ||
+            vowelLetter === "U"
+        ) {
+            list.style.background = "red";
+        } else {
+            list.style.background = "green";
+        }
+    }
+</script>
+
+>>>>>>> 7e6527e8217c5cabac2a049ceafbda0127b761d1
 </html>

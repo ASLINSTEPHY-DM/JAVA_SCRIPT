@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -25,4 +26,33 @@
         filledText = div.innerHTML;
     }</script>
 
+=======
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="TextBox(this)">First Box </div>
+    <div onclick="TextBox(this)">Second Box </div>
+    <div onclick="TextBox(this)">Third Box </div>
+    <div onclick="TextBox(this)">Fourth Box </div>
+</body>
+<script> var filledText = "";
+    function TextBox(div) {
+        if (filledText != "") {
+            alert(filledText + " " + div.innerHTML);
+        } else {
+            alert(div.innerHTML);
+        }
+        filledText = div.innerHTML;
+    }</script>
+
+>>>>>>> 7e6527e8217c5cabac2a049ceafbda0127b761d1
 </html>

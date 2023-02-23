@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -24,4 +25,32 @@
     }
 </script>
 
+=======
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        #first {
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="first" onkeyup="insideText()">
+    <div id="second"></div>
+</body>
+<script>
+    function insideText() {
+        var text = document.getElementById("first").value;
+        document.getElementById("second").innerHTML = text;
+    }
+</script>
+
+>>>>>>> 7e6527e8217c5cabac2a049ceafbda0127b761d1
 </html>

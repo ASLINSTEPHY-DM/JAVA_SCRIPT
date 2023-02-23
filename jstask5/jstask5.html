@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 
 <body>
@@ -21,4 +22,29 @@
     }
 </script>
 
+=======
+<html>
+
+<body>
+    <ol onclick="familyList()">
+        <li>Grandmother</li>
+        <li>Dad</li>
+        <li>Mom</li>
+        <li>Sister</li>
+    </ol>
+</body>
+<script>
+    let textList = document.getElementsByTagName("li");
+    for (let i = 0; i < textList.length; i++) {
+        textList[i].addEventListener("click", function () {
+            if (i % 2 == 0) {
+                this.style.color = "green";
+            } else {
+                this.style.color = "red";
+            }
+        });
+    }
+</script>
+
+>>>>>>> 7e6527e8217c5cabac2a049ceafbda0127b761d1
 </html>
