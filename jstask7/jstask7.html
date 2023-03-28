@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Divisible Numbers</h1>
+	<form>
+		<label for="rangeFrom">Range from:</label><br>
+		<input type="number" id="rangeFrom" name="rangeFrom" value="0"><br>
+		<label for="rangeTo">Range to:</label><br>
+		<input type="number" id="rangeTo" name="rangeTo" value="100"><br>
+		<label for="divisibleValue">Divisible value:</label><br>
+		<input type="number" id="divisibleValue" name="divisibleValue"><br><br>
+		<button type="button" onclick="showDivisibleNumbers()">Submit</button>
+	</form>
+
+	<p id="result"></p>
+
+	<script>
+        
+	function showDivisibleNumbers() {
+	  var rangeFrom = parseInt(document.getElementById("rangeFrom").value);
+	  var rangeTo = parseInt(document.getElementById("rangeTo").value);
+	  var divisibleValue = parseInt(document.getElementById("divisibleValue").value);
+	  var result = "";
+
+	  for (var i = rangeFrom; i <= rangeTo; i++) {
+	    if (i % divisibleValue === 0) {
+	      result += i + ", ";
+	    }
+	  }
+
+	  document.getElementById("result").innerHTML = result;
+	}
+
+    </script>
+
+</body>
+</html>
