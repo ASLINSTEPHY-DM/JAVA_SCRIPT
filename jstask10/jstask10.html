@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<div class="box" style="background-color:red;"></div>
+<div class="box" style="background-color:green;"></div>
+<div class="box" style="background-color:blue;"></div>
+<div class="box" style="background-color:yellow;"></div>
+
+<script>
+let boxes = document.querySelectorAll('.box');
+let lastClickedBox = null;
+
+boxes.forEach(box => {
+  box.addEventListener('click', () => {
+    if (lastClickedBox) {
+      lastClickedBox.style.display = 'inline-block';
+    }
+    lastClickedBox = box;
+    box.style.display = 'none';
+  });
+});
+</script>
+
+</body>
+</html>
